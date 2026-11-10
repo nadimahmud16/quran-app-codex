@@ -1,0 +1,225 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Quran in One Year</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Amiri+Quran&family=Aref+Ruqaa:wght@700&family=Noto+Sans+Bengali:wght@400;600&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: phone app shell — scrolling screen + fixed bottom tab bar; deep green header band on Today */
+:root{--bg:#eef3f0;--card:#ffffff;--fg:#1b2924;--muted:#5f7068;--line:#d9e3de;--accent:#0f6b52;--accent2:#c9a24a;--soft:#dfeee7;--empty:#e3e9e6;--onacc:#ffffff;--deep:#0b4a3a;--gold:#d8b25a;--goldsoft:rgba(216,178,90,.5);
+--display:'Amiri',Georgia,serif;--body:'Nunito Sans',system-ui,sans-serif;--ar:'Amiri Quran','Amiri',serif;--cal:'Aref Ruqaa','Amiri',serif;--bn:'Noto Sans Bengali','Nunito Sans',sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1714;--card:#16221e;--fg:#e3ece8;--muted:#9aaca4;--line:#26352f;--accent:#4fbf98;--accent2:#d9b562;--soft:#1c3029;--empty:#1f2c27;--onacc:#0e1714;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1714;--card:#16221e;--fg:#e3ece8;--muted:#9aaca4;--line:#26352f;--accent:#4fbf98;--accent2:#d9b562;--soft:#1c3029;--empty:#1f2c27;--onacc:#0e1714;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px}
+.screen{max-width:560px;margin:0 auto;padding-block:20px calc(96px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lbl{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:800}
+h1{font-family:var(--display);color:var(--accent);font-size:1.9rem;margin:0;line-height:1.2}
+.hello{color:var(--muted);margin:0}
+.hero{background:var(--accent);color:var(--onacc);border:0}
+.hero .lbl{color:var(--onacc);opacity:.8}
+.hero .big{font-size:1.3rem;font-weight:800;line-height:1.35}
+.hero .meta{opacity:.85;font-size:.88rem}
+.btn{font:inherit;font-weight:800;border:0;border-radius:12px;padding:12px 16px;cursor:pointer;background:var(--onacc);color:var(--accent)}
+.btn.ghost{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+.btn.fill{background:var(--accent);color:var(--onacc)}
+button:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.tile b{font-size:1.5rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.tile span{font-size:.75rem;color:var(--muted)}
+.ringrow{display:flex;align-items:center;gap:16px}
+.ring{width:96px;height:96px;flex:none}
+.ring circle{fill:none;stroke-width:10}
+.ring .bg{stroke:var(--empty)}.ring .fg{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset .6s}
+.ring text{fill:var(--fg);font:800 18px var(--body)}
+.status{font-weight:700}.status.ok{color:var(--accent)}.status.late{color:var(--accent2)}
+.heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(11px,1fr));gap:3px}
+.heat i{aspect-ratio:1;border-radius:3px;background:var(--empty);max-width:100%}
+.heat i.d{background:var(--accent)}.heat i.t{outline:2px solid var(--accent2);outline-offset:1px}
+.juz{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
+.juz div{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.68rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.juz .b{width:100%;height:34px;background:var(--empty);border-radius:6px;position:relative;overflow:hidden}
+.juz .b i{position:absolute;left:0;right:0;bottom:0;background:var(--accent)}
+.legend{display:flex;gap:14px;font-size:.75rem;color:var(--muted);align-items:center}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+/* reader */
+.ay{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:8px}
+.ar{font-family:var(--ar);font-size:1.7rem;line-height:2.3;direction:rtl;text-align:right}
+.tr{font-style:italic;color:var(--accent);line-height:1.5}
+.bnt{font-family:var(--bn);color:var(--muted);line-height:1.6}
+.sh{font-family:var(--display);font-size:1.3rem;color:var(--accent)}
+.ayh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.lis{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:800;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:999px;padding:5px 12px}
+.lis svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lis:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+.num{font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.nav{display:flex;gap:8px;flex-wrap:wrap}.nav .btn{flex:1}
+/* plan list */
+h2{font-size:.85rem;margin:8px 0 0;color:var(--accent)}
+.row{display:grid;grid-template-columns:24px 62px 1fr;gap:10px;align-items:start;padding:10px 0;border-bottom:1px solid var(--line)}
+.row .dt{color:var(--muted);font-size:.78rem;font-variant-numeric:tabular-nums}
+.row .rd{min-width:0;text-align:left;font:inherit;background:none;border:0;padding:0;color:var(--fg);cursor:pointer}
+.row.done .rd{color:var(--muted);text-decoration:line-through}
+.row.now{background:var(--soft);border-radius:8px}
+input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent);margin-top:2px}
+.src{font-size:.72rem;color:var(--muted)}
+/* tab bar */
+.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(8px,env(safe-area-inset-left,0px));padding-right:max(8px,env(safe-area-inset-right,0px));z-index:5}
+.tabs button{flex:1;max-width:140px;font:inherit;font-size:.72rem;font-weight:700;background:none;border:0;color:var(--muted);padding:10px 4px 12px;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer}
+.tabs svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabs button[aria-selected=true]{color:var(--accent)}
+.crown{position:relative;border-radius:160px 160px 18px 18px;overflow:hidden;padding:44px 20px 22px;text-align:center;background:var(--deep);color:var(--gold);display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:inset 0 0 0 2px var(--gold),inset 0 0 0 7px var(--deep),inset 0 0 0 8px var(--goldsoft)}
+.crown .pat{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.crown .pat path{fill:none;stroke:var(--gold);stroke-width:.7;opacity:.22}
+.crown>*:not(.pat){position:relative}
+.basmala{font-family:var(--cal);font-size:clamp(2.2rem,10vw,3.2rem);line-height:1.6;color:var(--gold);direction:rtl;margin:0;opacity:0;animation:rise 1.4s ease-out .1s forwards;text-shadow:0 2px 12px rgba(0,0,0,.25)}
+.orn{display:flex;align-items:center;gap:10px;width:72%;max-width:280px}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{transform:scaleX(-1)}
+.orn svg{width:20px;height:20px;flex:none}.orn svg path{fill:var(--gold)}
+.crown h1{font-size:1.7rem;color:#f6efe0}
+.crown .hello{color:#cfe0d8}
+.crown .tag{font-family:var(--cal);font-size:1.35rem;color:var(--gold);direction:rtl;opacity:.9}
+.hero{position:relative;overflow:hidden}
+.hero .wm{position:absolute;left:-6px;bottom:-26px;font-family:var(--cal);font-size:5.2rem;line-height:1;opacity:.13;color:var(--onacc);pointer-events:none;white-space:nowrap}
+.hero>*:not(.wm){position:relative}
+.night{gap:8px}
+.prac{gap:10px}
+.prac h3{font-family:var(--display);font-size:1.35rem;color:var(--accent);margin:0;line-height:1.3;text-wrap:balance}
+.prac .ptxt{font-size:1.08rem;line-height:1.75;margin:0;max-width:65ch}
+.lvl{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:800;color:var(--accent);background:var(--soft);border-radius:999px;padding:3px 10px;width:max-content}
+.words{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+.words div{font-size:.9rem;line-height:1.45}.words b{color:var(--accent)}.words span{color:var(--muted)}
+.words .wbn{font-family:var(--bn)}
+.night .ar{font-size:1.6rem;line-height:2.1}
+.closing{text-align:center;font-family:var(--cal);font-size:1.5rem;color:var(--accent2);direction:rtl;margin:4px 0 0}
+@keyframes rise{from{opacity:.001;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.basmala{animation:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.ring .fg{transition:none}}
+</style>
+
+<main class="screen" id="v-today"></main>
+<main class="screen" id="v-read" hidden></main>
+<main class="screen" id="v-plan" hidden></main>
+<main class="screen" id="v-stats" hidden></main>
+
+<nav class="tabs" role="tablist">
+ <button role="tab" data-v="today" aria-selected="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Today</button>
+ <button role="tab" data-v="read" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M12 6c-2-1.5-5-2-8-2v14c3 0 6 .5 8 2 2-1.5 5-2 8-2V4c-3 0-6 .5-8 2zM12 6v14"/></svg>Read</button>
+ <button role="tab" data-v="plan" aria-selected="false"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Plan</button>
+ <button role="tab" data-v="stats" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M5 20V11M12 20V5M19 20v-6"/></svg>Progress</button>
+</nav>
+
+<script>
+const D=[{"d":1,"date":"2026-10-19","p":[[1,1,7],[2,1,10]]},{"d":2,"date":"2026-10-20","p":[[2,11,27]]},{"d":3,"date":"2026-10-21","p":[[2,28,44]]},{"d":4,"date":"2026-10-22","p":[[2,45,61]]},{"d":5,"date":"2026-10-23","p":[[2,62,78]]},{"d":6,"date":"2026-10-24","p":[[2,79,96]]},{"d":7,"date":"2026-10-25","p":[[2,97,113]]},{"d":8,"date":"2026-10-26","p":[[2,114,130]]},{"d":9,"date":"2026-10-27","p":[[2,131,147]]},{"d":10,"date":"2026-10-28","p":[[2,148,164]]},{"d":11,"date":"2026-10-29","p":[[2,165,181]]},{"d":12,"date":"2026-10-30","p":[[2,182,198]]},{"d":13,"date":"2026-10-31","p":[[2,199,215]]},{"d":14,"date":"2026-11-01","p":[[2,216,232]]},{"d":15,"date":"2026-11-02","p":[[2,233,249]]},{"d":16,"date":"2026-11-03","p":[[2,250,266]]},{"d":17,"date":"2026-11-04","p":[[2,267,283]]},{"d":18,"date":"2026-11-05","p":[[2,284,286],[3,1,15]]},{"d":19,"date":"2026-11-06","p":[[3,16,32]]},{"d":20,"date":"2026-11-07","p":[[3,33,49]]},{"d":21,"date":"2026-11-08","p":[[3,50,66]]},{"d":22,"date":"2026-11-09","p":[[3,67,83]]},{"d":23,"date":"2026-11-10","p":[[3,84,100]]},{"d":24,"date":"2026-11-11","p":[[3,101,117]]},{"d":25,"date":"2026-11-12","p":[[3,118,134]]},{"d":26,"date":"2026-11-13","p":[[3,135,151]]},{"d":27,"date":"2026-11-14","p":[[3,152,168]]},{"d":28,"date":"2026-11-15","p":[[3,169,185]]},{"d":29,"date":"2026-11-16","p":[[3,186,200],[4,1,2]]},{"d":30,"date":"2026-11-17","p":[[4,3,20]]},{"d":31,"date":"2026-11-18","p":[[4,21,37]]},{"d":32,"date":"2026-11-19","p":[[4,38,54]]},{"d":33,"date":"2026-11-20","p":[[4,55,71]]},{"d":34,"date":"2026-11-21","p":[[4,72,88]]},{"d":35,"date":"2026-11-22","p":[[4,89,105]]},{"d":36,"date":"2026-11-23","p":[[4,106,122]]},{"d":37,"date":"2026-11-24","p":[[4,123,139]]},{"d":38,"date":"2026-11-25","p":[[4,140,156]]},{"d":39,"date":"2026-11-26","p":[[4,157,173]]},{"d":40,"date":"2026-11-27","p":[[4,174,176],[5,1,14]]},{"d":41,"date":"2026-11-28","p":[[5,15,31]]},{"d":42,"date":"2026-11-29","p":[[5,32,49]]},{"d":43,"date":"2026-11-30","p":[[5,50,66]]},{"d":44,"date":"2026-12-01","p":[[5,67,83]]},{"d":45,"date":"2026-12-02","p":[[5,84,100]]},{"d":46,"date":"2026-12-03","p":[[5,101,117]]},{"d":47,"date":"2026-12-04","p":[[5,118,120],[6,1,14]]},{"d":48,"date":"2026-12-05","p":[[6,15,31]]},{"d":49,"date":"2026-12-06","p":[[6,32,48]]},{"d":50,"date":"2026-12-07","p":[[6,49,65]]},{"d":51,"date":"2026-12-08","p":[[6,66,82]]},{"d":52,"date":"2026-12-09","p":[[6,83,99]]},{"d":53,"date":"2026-12-10","p":[[6,100,117]]},{"d":54,"date":"2026-12-11","p":[[6,118,134]]},{"d":55,"date":"2026-12-12","p":[[6,135,151]]},{"d":56,"date":"2026-12-13","p":[[6,152,165],[7,1,3]]},{"d":57,"date":"2026-12-14","p":[[7,4,20]]},{"d":58,"date":"2026-12-15","p":[[7,21,37]]},{"d":59,"date":"2026-12-16","p":[[7,38,54]]},{"d":60,"date":"2026-12-17","p":[[7,55,71]]},{"d":61,"date":"2026-12-18","p":[[7,72,88]]},{"d":62,"date":"2026-12-19","p":[[7,89,105]]},{"d":63,"date":"2026-12-20","p":[[7,106,122]]},{"d":64,"date":"2026-12-21","p":[[7,123,139]]},{"d":65,"date":"2026-12-22","p":[[7,140,157]]},{"d":66,"date":"2026-12-23","p":[[7,158,174]]},{"d":67,"date":"2026-12-24","p":[[7,175,191]]},{"d":68,"date":"2026-12-25","p":[[7,192,206],[8,1,2]]},{"d":69,"date":"2026-12-26","p":[[8,3,19]]},{"d":70,"date":"2026-12-27","p":[[8,20,36]]},{"d":71,"date":"2026-12-28","p":[[8,37,53]]},{"d":72,"date":"2026-12-29","p":[[8,54,70]]},{"d":73,"date":"2026-12-30","p":[[8,71,75],[9,1,12]]},{"d":74,"date":"2026-12-31","p":[[9,13,29]]},{"d":75,"date":"2027-01-01","p":[[9,30,46]]},{"d":76,"date":"2027-01-02","p":[[9,47,63]]},{"d":77,"date":"2027-01-03","p":[[9,64,81]]},{"d":78,"date":"2027-01-04","p":[[9,82,98]]},{"d":79,"date":"2027-01-05","p":[[9,99,115]]},{"d":80,"date":"2027-01-06","p":[[9,116,129],[10,1,3]]},{"d":81,"date":"2027-01-07","p":[[10,4,20]]},{"d":82,"date":"2027-01-08","p":[[10,21,37]]},{"d":83,"date":"2027-01-09","p":[[10,38,54]]},{"d":84,"date":"2027-01-10","p":[[10,55,71]]},{"d":85,"date":"2027-01-11","p":[[10,72,88]]},{"d":86,"date":"2027-01-12","p":[[10,89,105]]},{"d":87,"date":"2027-01-13","p":[[10,106,109],[11,1,13]]},{"d":88,"date":"2027-01-14","p":[[11,14,30]]},{"d":89,"date":"2027-01-15","p":[[11,31,48]]},{"d":90,"date":"2027-01-16","p":[[11,49,65]]},{"d":91,"date":"2027-01-17","p":[[11,66,82]]},{"d":92,"date":"2027-01-18","p":[[11,83,99]]},{"d":93,"date":"2027-01-19","p":[[11,100,116]]},{"d":94,"date":"2027-01-20","p":[[11,117,123],[12,1,10]]},{"d":95,"date":"2027-01-21","p":[[12,11,27]]},{"d":96,"date":"2027-01-22","p":[[12,28,44]]},{"d":97,"date":"2027-01-23","p":[[12,45,61]]},{"d":98,"date":"2027-01-24","p":[[12,62,78]]},{"d":99,"date":"2027-01-25","p":[[12,79,95]]},{"d":100,"date":"2027-01-26","p":[[12,96,111],[13,1,1]]},{"d":101,"date":"2027-01-27","p":[[13,2,19]]},{"d":102,"date":"2027-01-28","p":[[13,20,36]]},{"d":103,"date":"2027-01-29","p":[[13,37,43],[14,1,10]]},{"d":104,"date":"2027-01-30","p":[[14,11,27]]},{"d":105,"date":"2027-01-31","p":[[14,28,44]]},{"d":106,"date":"2027-02-01","p":[[14,45,52],[15,1,9]]},{"d":107,"date":"2027-02-02","p":[[15,10,26]]},{"d":108,"date":"2027-02-03","p":[[15,27,43]]},{"d":109,"date":"2027-02-04","p":[[15,44,60]]},{"d":110,"date":"2027-02-05","p":[[15,61,77]]},{"d":111,"date":"2027-02-06","p":[[15,78,94]]},{"d":112,"date":"2027-02-07","p":[[15,95,99],[16,1,13]]},{"d":113,"date":"2027-02-08","p":[[16,14,30]]},{"d":114,"date":"2027-02-09","p":[[16,31,47]]},{"d":115,"date":"2027-02-10","p":[[16,48,64]]},{"d":116,"date":"2027-02-11","p":[[16,65,81]]},{"d":117,"date":"2027-02-12","p":[[16,82,98]]},{"d":118,"date":"2027-02-13","p":[[16,99,115]]},{"d":119,"date":"2027-02-14","p":[[16,116,128],[17,1,4]]},{"d":120,"date":"2027-02-15","p":[[17,5,21]]},{"d":121,"date":"2027-02-16","p":[[17,22,38]]},{"d":122,"date":"2027-02-17","p":[[17,39,55]]},{"d":123,"date":"2027-02-18","p":[[17,56,72]]},{"d":124,"date":"2027-02-19","p":[[17,73,90]]},{"d":125,"date":"2027-02-20","p":[[17,91,107]]},{"d":126,"date":"2027-02-21","p":[[17,108,111],[18,1,13]]},{"d":127,"date":"2027-02-22","p":[[18,14,30]]},{"d":128,"date":"2027-02-23","p":[[18,31,47]]},{"d":129,"date":"2027-02-24","p":[[18,48,64]]},{"d":130,"date":"2027-02-25","p":[[18,65,81]]},{"d":131,"date":"2027-02-26","p":[[18,82,98]]},{"d":132,"date":"2027-02-27","p":[[18,99,110],[19,1,5]]},{"d":133,"date":"2027-02-28","p":[[19,6,22]]},{"d":134,"date":"2027-03-01","p":[[19,23,39]]},{"d":135,"date":"2027-03-02","p":[[19,40,56]]},{"d":136,"date":"2027-03-03","p":[[19,57,74]]},{"d":137,"date":"2027-03-04","p":[[19,75,91]]},{"d":138,"date":"2027-03-05","p":[[19,92,98],[20,1,10]]},{"d":139,"date":"2027-03-06","p":[[20,11,27]]},{"d":140,"date":"2027-03-07","p":[[20,28,44]]},{"d":141,"date":"2027-03-08","p":[[20,45,61]]},{"d":142,"date":"2027-03-09","p":[[20,62,78]]},{"d":143,"date":"2027-03-10","p":[[20,79,95]]},{"d":144,"date":"2027-03-11","p":[[20,96,112]]},{"d":145,"date":"2027-03-12","p":[[20,113,129]]},{"d":146,"date":"2027-03-13","p":[[20,130,135],[21,1,11]]},{"d":147,"date":"2027-03-14","p":[[21,12,28]]},{"d":148,"date":"2027-03-15","p":[[21,29,46]]},{"d":149,"date":"2027-03-16","p":[[21,47,63]]},{"d":150,"date":"2027-03-17","p":[[21,64,80]]},{"d":151,"date":"2027-03-18","p":[[21,81,97]]},{"d":152,"date":"2027-03-19","p":[[21,98,112],[22,1,2]]},{"d":153,"date":"2027-03-20","p":[[22,3,19]]},{"d":154,"date":"2027-03-21","p":[[22,20,36]]},{"d":155,"date":"2027-03-22","p":[[22,37,53]]},{"d":156,"date":"2027-03-23","p":[[22,54,70]]},{"d":157,"date":"2027-03-24","p":[[22,71,78],[23,1,9]]},{"d":158,"date":"2027-03-25","p":[[23,10,26]]},{"d":159,"date":"2027-03-26","p":[[23,27,44]]},{"d":160,"date":"2027-03-27","p":[[23,45,61]]},{"d":161,"date":"2027-03-28","p":[[23,62,78]]},{"d":162,"date":"2027-03-29","p":[[23,79,95]]},{"d":163,"date":"2027-03-30","p":[[23,96,112]]},{"d":164,"date":"2027-03-31","p":[[23,113,118],[24,1,11]]},{"d":165,"date":"2027-04-01","p":[[24,12,28]]},{"d":166,"date":"2027-04-02","p":[[24,29,45]]},{"d":167,"date":"2027-04-03","p":[[24,46,62]]},{"d":168,"date":"2027-04-04","p":[[24,63,64],[25,1,15]]},{"d":169,"date":"2027-04-05","p":[[25,16,32]]},{"d":170,"date":"2027-04-06","p":[[25,33,49]]},{"d":171,"date":"2027-04-07","p":[[25,50,67]]},{"d":172,"date":"2027-04-08","p":[[25,68,77],[26,1,7]]},{"d":173,"date":"2027-04-09","p":[[26,8,24]]},{"d":174,"date":"2027-04-10","p":[[26,25,41]]},{"d":175,"date":"2027-04-11","p":[[26,42,58]]},{"d":176,"date":"2027-04-12","p":[[26,59,75]]},{"d":177,"date":"2027-04-13","p":[[26,76,92]]},{"d":178,"date":"2027-04-14","p":[[26,93,109]]},{"d":179,"date":"2027-04-15","p":[[26,110,126]]},{"d":180,"date":"2027-04-16","p":[[26,127,143]]},{"d":181,"date":"2027-04-17","p":[[26,144,160]]},{"d":182,"date":"2027-04-18","p":[[26,161,177]]},{"d":183,"date":"2027-04-19","p":[[26,178,195]]},{"d":184,"date":"2027-04-20","p":[[26,196,212]]},{"d":185,"date":"2027-04-21","p":[[26,213,227],[27,1,2]]},{"d":186,"date":"2027-04-22","p":[[27,3,19]]},{"d":187,"date":"2027-04-23","p":[[27,20,36]]},{"d":188,"date":"2027-04-24","p":[[27,37,53]]},{"d":189,"date":"2027-04-25","p":[[27,54,70]]},{"d":190,"date":"2027-04-26","p":[[27,71,87]]},{"d":191,"date":"2027-04-27","p":[[27,88,93],[28,1,11]]},{"d":192,"date":"2027-04-28","p":[[28,12,28]]},{"d":193,"date":"2027-04-29","p":[[28,29,45]]},{"d":194,"date":"2027-04-30","p":[[28,46,62]]},{"d":195,"date":"2027-05-01","p":[[28,63,80]]},{"d":196,"date":"2027-05-02","p":[[28,81,88],[29,1,9]]},{"d":197,"date":"2027-05-03","p":[[29,10,26]]},{"d":198,"date":"2027-05-04","p":[[29,27,43]]},{"d":199,"date":"2027-05-05","p":[[29,44,60]]},{"d":200,"date":"2027-05-06","p":[[29,61,69],[30,1,8]]},{"d":201,"date":"2027-05-07","p":[[30,9,25]]},{"d":202,"date":"2027-05-08","p":[[30,26,42]]},{"d":203,"date":"2027-05-09","p":[[30,43,59]]},{"d":204,"date":"2027-05-10","p":[[30,60,60],[31,1,16]]},{"d":205,"date":"2027-05-11","p":[[31,17,33]]},{"d":206,"date":"2027-05-12","p":[[31,34,34],[32,1,16]]},{"d":207,"date":"2027-05-13","p":[[32,17,30],[33,1,4]]},{"d":208,"date":"2027-05-14","p":[[33,5,21]]},{"d":209,"date":"2027-05-15","p":[[33,22,38]]},{"d":210,"date":"2027-05-16","p":[[33,39,55]]},{"d":211,"date":"2027-05-17","p":[[33,56,72]]},{"d":212,"date":"2027-05-18","p":[[33,73,73],[34,1,16]]},{"d":213,"date":"2027-05-19","p":[[34,17,33]]},{"d":214,"date":"2027-05-20","p":[[34,34,50]]},{"d":215,"date":"2027-05-21","p":[[34,51,54],[35,1,13]]},{"d":216,"date":"2027-05-22","p":[[35,14,30]]},{"d":217,"date":"2027-05-23","p":[[35,31,45],[36,1,2]]},{"d":218,"date":"2027-05-24","p":[[36,3,20]]},{"d":219,"date":"2027-05-25","p":[[36,21,37]]},{"d":220,"date":"2027-05-26","p":[[36,38,54]]},{"d":221,"date":"2027-05-27","p":[[36,55,71]]},{"d":222,"date":"2027-05-28","p":[[36,72,83],[37,1,5]]},{"d":223,"date":"2027-05-29","p":[[37,6,22]]},{"d":224,"date":"2027-05-30","p":[[37,23,39]]},{"d":225,"date":"2027-05-31","p":[[37,40,56]]},{"d":226,"date":"2027-06-01","p":[[37,57,73]]},{"d":227,"date":"2027-06-02","p":[[37,74,90]]},{"d":228,"date":"2027-06-03","p":[[37,91,107]]},{"d":229,"date":"2027-06-04","p":[[37,108,124]]},{"d":230,"date":"2027-06-05","p":[[37,125,142]]},{"d":231,"date":"2027-06-06","p":[[37,143,159]]},{"d":232,"date":"2027-06-07","p":[[37,160,176]]},{"d":233,"date":"2027-06-08","p":[[37,177,182],[38,1,11]]},{"d":234,"date":"2027-06-09","p":[[38,12,28]]},{"d":235,"date":"2027-06-10","p":[[38,29,45]]},{"d":236,"date":"2027-06-11","p":[[38,46,62]]},{"d":237,"date":"2027-06-12","p":[[38,63,79]]},{"d":238,"date":"2027-06-13","p":[[38,80,88],[39,1,8]]},{"d":239,"date":"2027-06-14","p":[[39,9,25]]},{"d":240,"date":"2027-06-15","p":[[39,26,42]]},{"d":241,"date":"2027-06-16","p":[[39,43,59]]},{"d":242,"date":"2027-06-17","p":[[39,60,75],[40,1,2]]},{"d":243,"date":"2027-06-18","p":[[40,3,19]]},{"d":244,"date":"2027-06-19","p":[[40,20,36]]},{"d":245,"date":"2027-06-20","p":[[40,37,53]]},{"d":246,"date":"2027-06-21","p":[[40,54,70]]},{"d":247,"date":"2027-06-22","p":[[40,71,85],[41,1,2]]},{"d":248,"date":"2027-06-23","p":[[41,3,19]]},{"d":249,"date":"2027-06-24","p":[[41,20,36]]},{"d":250,"date":"2027-06-25","p":[[41,37,53]]},{"d":251,"date":"2027-06-26","p":[[41,54,54],[42,1,16]]},{"d":252,"date":"2027-06-27","p":[[42,17,33]]},{"d":253,"date":"2027-06-28","p":[[42,34,50]]},{"d":254,"date":"2027-06-29","p":[[42,51,53],[43,1,15]]},{"d":255,"date":"2027-06-30","p":[[43,16,32]]},{"d":256,"date":"2027-07-01","p":[[43,33,49]]},{"d":257,"date":"2027-07-02","p":[[43,50,66]]},{"d":258,"date":"2027-07-03","p":[[43,67,83]]},{"d":259,"date":"2027-07-04","p":[[43,84,89],[44,1,11]]},{"d":260,"date":"2027-07-05","p":[[44,12,28]]},{"d":261,"date":"2027-07-06","p":[[44,29,45]]},{"d":262,"date":"2027-07-07","p":[[44,46,59],[45,1,3]]},{"d":263,"date":"2027-07-08","p":[[45,4,20]]},{"d":264,"date":"2027-07-09","p":[[45,21,37]]},{"d":265,"date":"2027-07-10","p":[[46,1,18]]},{"d":266,"date":"2027-07-11","p":[[46,19,35]]},{"d":267,"date":"2027-07-12","p":[[47,1,17]]},{"d":268,"date":"2027-07-13","p":[[47,18,34]]},{"d":269,"date":"2027-07-14","p":[[47,35,38],[48,1,13]]},{"d":270,"date":"2027-07-15","p":[[48,14,29],[49,1,1]]},{"d":271,"date":"2027-07-16","p":[[49,2,18]]},{"d":272,"date":"2027-07-17","p":[[50,1,17]]},{"d":273,"date":"2027-07-18","p":[[50,18,34]]},{"d":274,"date":"2027-07-19","p":[[50,35,45],[51,1,6]]},{"d":275,"date":"2027-07-20","p":[[51,7,23]]},{"d":276,"date":"2027-07-21","p":[[51,24,40]]},{"d":277,"date":"2027-07-22","p":[[51,41,58]]},{"d":278,"date":"2027-07-23","p":[[51,59,60],[52,1,15]]},{"d":279,"date":"2027-07-24","p":[[52,16,32]]},{"d":280,"date":"2027-07-25","p":[[52,33,49]]},{"d":281,"date":"2027-07-26","p":[[53,1,17]]},{"d":282,"date":"2027-07-27","p":[[53,18,34]]},{"d":283,"date":"2027-07-28","p":[[53,35,51]]},{"d":284,"date":"2027-07-29","p":[[53,52,62],[54,1,6]]},{"d":285,"date":"2027-07-30","p":[[54,7,23]]},{"d":286,"date":"2027-07-31","p":[[54,24,40]]},{"d":287,"date":"2027-08-01","p":[[54,41,55],[55,1,2]]},{"d":288,"date":"2027-08-02","p":[[55,3,19]]},{"d":289,"date":"2027-08-03","p":[[55,20,37]]},{"d":290,"date":"2027-08-04","p":[[55,38,54]]},{"d":291,"date":"2027-08-05","p":[[55,55,71]]},{"d":292,"date":"2027-08-06","p":[[55,72,78],[56,1,10]]},{"d":293,"date":"2027-08-07","p":[[56,11,27]]},{"d":294,"date":"2027-08-08","p":[[56,28,44]]},{"d":295,"date":"2027-08-09","p":[[56,45,61]]},{"d":296,"date":"2027-08-10","p":[[56,62,78]]},{"d":297,"date":"2027-08-11","p":[[56,79,95]]},{"d":298,"date":"2027-08-12","p":[[56,96,96],[57,1,16]]},{"d":299,"date":"2027-08-13","p":[[57,17,29],[58,1,4]]},{"d":300,"date":"2027-08-14","p":[[58,5,21]]},{"d":301,"date":"2027-08-15","p":[[58,22,22],[59,1,17]]},{"d":302,"date":"2027-08-16","p":[[59,18,24],[60,1,10]]},{"d":303,"date":"2027-08-17","p":[[60,11,13],[61,1,14]]},{"d":304,"date":"2027-08-18","p":[[62,1,11],[63,1,6]]},{"d":305,"date":"2027-08-19","p":[[63,7,11],[64,1,12]]},{"d":306,"date":"2027-08-20","p":[[64,13,18],[65,1,11]]},{"d":307,"date":"2027-08-21","p":[[65,12,12],[66,1,12],[67,1,4]]},{"d":308,"date":"2027-08-22","p":[[67,5,21]]},{"d":309,"date":"2027-08-23","p":[[67,22,30],[68,1,8]]},{"d":310,"date":"2027-08-24","p":[[68,9,25]]},{"d":311,"date":"2027-08-25","p":[[68,26,42]]},{"d":312,"date":"2027-08-26","p":[[68,43,52],[69,1,7]]},{"d":313,"date":"2027-08-27","p":[[69,8,25]]},{"d":314,"date":"2027-08-28","p":[[69,26,42]]},{"d":315,"date":"2027-08-29","p":[[69,43,52],[70,1,7]]},{"d":316,"date":"2027-08-30","p":[[70,8,24]]},{"d":317,"date":"2027-08-31","p":[[70,25,41]]},{"d":318,"date":"2027-09-01","p":[[70,42,44],[71,1,14]]},{"d":319,"date":"2027-09-02","p":[[71,15,28],[72,1,3]]},{"d":320,"date":"2027-09-03","p":[[72,4,20]]},{"d":321,"date":"2027-09-04","p":[[72,21,28],[73,1,9]]},{"d":322,"date":"2027-09-05","p":[[73,10,20],[74,1,6]]},{"d":323,"date":"2027-09-06","p":[[74,7,23]]},{"d":324,"date":"2027-09-07","p":[[74,24,41]]},{"d":325,"date":"2027-09-08","p":[[74,42,56],[75,1,2]]},{"d":326,"date":"2027-09-09","p":[[75,3,19]]},{"d":327,"date":"2027-09-10","p":[[75,20,36]]},{"d":328,"date":"2027-09-11","p":[[75,37,40],[76,1,13]]},{"d":329,"date":"2027-09-12","p":[[76,14,30]]},{"d":330,"date":"2027-09-13","p":[[76,31,31],[77,1,16]]},{"d":331,"date":"2027-09-14","p":[[77,17,33]]},{"d":332,"date":"2027-09-15","p":[[77,34,50]]},{"d":333,"date":"2027-09-16","p":[[78,1,17]]},{"d":334,"date":"2027-09-17","p":[[78,18,34]]},{"d":335,"date":"2027-09-18","p":[[78,35,40],[79,1,11]]},{"d":336,"date":"2027-09-19","p":[[79,12,29]]},{"d":337,"date":"2027-09-20","p":[[79,30,46]]},{"d":338,"date":"2027-09-21","p":[[80,1,17]]},{"d":339,"date":"2027-09-22","p":[[80,18,34]]},{"d":340,"date":"2027-09-23","p":[[80,35,42],[81,1,9]]},{"d":341,"date":"2027-09-24","p":[[81,10,26]]},{"d":342,"date":"2027-09-25","p":[[81,27,29],[82,1,14]]},{"d":343,"date":"2027-09-26","p":[[82,15,19],[83,1,12]]},{"d":344,"date":"2027-09-27","p":[[83,13,29]]},{"d":345,"date":"2027-09-28","p":[[83,30,36],[84,1,10]]},{"d":346,"date":"2027-09-29","p":[[84,11,25],[85,1,2]]},{"d":347,"date":"2027-09-30","p":[[85,3,19]]},{"d":348,"date":"2027-10-01","p":[[85,20,22],[86,1,15]]},{"d":349,"date":"2027-10-02","p":[[86,16,17],[87,1,15]]},{"d":350,"date":"2027-10-03","p":[[87,16,19],[88,1,13]]},{"d":351,"date":"2027-10-04","p":[[88,14,26],[89,1,4]]},{"d":352,"date":"2027-10-05","p":[[89,5,21]]},{"d":353,"date":"2027-10-06","p":[[89,22,30],[90,1,8]]},{"d":354,"date":"2027-10-07","p":[[90,9,20],[91,1,5]]},{"d":355,"date":"2027-10-08","p":[[91,6,15],[92,1,7]]},{"d":356,"date":"2027-10-09","p":[[92,8,21],[93,1,3]]},{"d":357,"date":"2027-10-10","p":[[93,4,11],[94,1,8],[95,1,1]]},{"d":358,"date":"2027-10-11","p":[[95,2,8],[96,1,10]]},{"d":359,"date":"2027-10-12","p":[[96,11,19],[97,1,5],[98,1,3]]},{"d":360,"date":"2027-10-13","p":[[98,4,8],[99,1,8],[100,1,5]]},{"d":361,"date":"2027-10-14","p":[[100,6,11],[101,1,11]]},{"d":362,"date":"2027-10-15","p":[[102,1,8],[103,1,3],[104,1,6]]},{"d":363,"date":"2027-10-16","p":[[104,7,9],[105,1,5],[106,1,4],[107,1,5]]},{"d":364,"date":"2027-10-17","p":[[107,6,7],[108,1,3],[109,1,6],[110,1,3],[111,1,3]]},{"d":365,"date":"2027-10-18","p":[[111,4,5],[112,1,4],[113,1,5],[114,1,6]]}],N=["Al-Fatihah", "Al-Baqarah", "Ali 'Imran", "An-Nisa", "Al-Ma'idah", "Al-An'am", "Al-A'raf", "Al-Anfal", "At-Tawbah", "Yunus", "Hud", "Yusuf", "Ar-Ra'd", "Ibrahim", "Al-Hijr", "An-Nahl", "Al-Isra", "Al-Kahf", "Maryam", "Ta-Ha", "Al-Anbiya", "Al-Hajj", "Al-Mu'minun", "An-Nur", "Al-Furqan", "Ash-Shu'ara", "An-Naml", "Al-Qasas", "Al-'Ankabut", "Ar-Rum", "Luqman", "As-Sajdah", "Al-Ahzab", "Saba", "Fatir", "Ya-Sin", "As-Saffat", "Sad", "Az-Zumar", "Ghafir", "Fussilat", "Ash-Shura", "Az-Zukhruf", "Ad-Dukhan", "Al-Jathiyah", "Al-Ahqaf", "Muhammad", "Al-Fath", "Al-Hujurat", "Qaf", "Adh-Dhariyat", "At-Tur", "An-Najm", "Al-Qamar", "Ar-Rahman", "Al-Waqi'ah", "Al-Hadid", "Al-Mujadilah", "Al-Hashr", "Al-Mumtahanah", "As-Saff", "Al-Jumu'ah", "Al-Munafiqun", "At-Taghabun", "At-Talaq", "At-Tahrim", "Al-Mulk", "Al-Qalam", "Al-Haqqah", "Al-Ma'arij", "Nuh", "Al-Jinn", "Al-Muzzammil", "Al-Muddaththir", "Al-Qiyamah", "Al-Insan", "Al-Mursalat", "An-Naba", "An-Nazi'at", "'Abasa", "At-Takwir", "Al-Infitar", "Al-Mutaffifin", "Al-Inshiqaq", "Al-Buruj", "At-Tariq", "Al-A'la", "Al-Ghashiyah", "Al-Fajr", "Al-Balad", "Ash-Shams", "Al-Layl", "Ad-Duha", "Ash-Sharh", "At-Tin", "Al-'Alaq", "Al-Qadr", "Al-Bayyinah", "Az-Zalzalah", "Al-'Adiyat", "Al-Qari'ah", "At-Takathur", "Al-'Asr", "Al-Humazah", "Al-Fil", "Quraysh", "Al-Ma'un", "Al-Kawthar", "Al-Kafirun", "An-Nasr", "Al-Masad", "Al-Ikhlas", "Al-Falaq", "An-Nas"],AR=["الفاتحة", "البقرة", "آل عمران", "النساء", "المائدة", "الأنعام", "الأعراف", "الأنفال", "التوبة", "يونس", "هود", "يوسف", "الرعد", "ابراهيم", "الحجر", "النحل", "الإسراء", "الكهف", "مريم", "طه", "الأنبياء", "الحج", "المؤمنون", "النور", "الفرقان", "الشعراء", "النمل", "القصص", "العنكبوت", "الروم", "لقمان", "السجدة", "الأحزاب", "سبإ", "فاطر", "يس", "الصافات", "ص", "الزمر", "غافر", "فصلت", "الشورى", "الزخرف", "الدخان", "الجاثية", "الأحقاف", "محمد", "الفتح", "الحجرات", "ق", "الذاريات", "الطور", "النجم", "القمر", "الرحمن", "الواقعة", "الحديد", "المجادلة", "الحشر", "الممتحنة", "الصف", "الجمعة", "المنافقون", "التغابن", "الطلاق", "التحريم", "الملك", "القلم", "الحاقة", "المعارج", "نوح", "الجن", "المزمل", "المدثر", "القيامة", "الانسان", "المرسلات", "النبإ", "النازعات", "عبس", "التكوير", "الإنفطار", "المطففين", "الإنشقاق", "البروج", "الطارق", "الأعلى", "الغاشية", "الفجر", "البلد", "الشمس", "الليل", "الضحى", "الشرح", "التين", "العلق", "القدر", "البينة", "الزلزلة", "العاديات", "القارعة", "التكاثر", "العصر", "الهمزة", "الفيل", "قريش", "الماعون", "الكوثر", "الكافرون", "النصر", "المسد", "الإخلاص", "الفلق", "الناس"];
+const JUZ=[[1,1],[2,142],[2,253],[3,93],[4,24],[4,148],[5,82],[6,111],[7,88],[8,41],[9,93],[11,6],[12,53],[15,1],[17,1],[18,75],[21,1],[23,1],[25,21],[27,56],[29,46],[33,31],[36,28],[39,32],[41,47],[46,1],[51,31],[58,1],[67,1],[78,1]];
+let Q=null,sel=null,view='today',done={};
+let meta=null;
+try{meta=JSON.parse(localStorage.getItem('qmeta')||'null')}catch(e){}
+if(!meta||!meta.done){meta={done:{},prac:{}};
+ try{const o=JSON.parse(localStorage.getItem('qdone')||'{}');for(const k in o)if(o[k])meta.done[k]={v:1,t:0}}catch(e){}
+ try{const o=JSON.parse(localStorage.getItem('qprac')||'{}');for(const k in o)if(o[k])meta.prac[k]={v:1,t:0}}catch(e){}}
+let prac={};
+function derive(){done={};prac={};for(const k in meta.done)if(meta.done[k].v)done[k]=1;for(const k in meta.prac)if(meta.prac[k].v)prac[k]=1}
+derive();
+function mergeMeta(a,b){const out={done:{},prac:{}};for(const kind of ['done','prac']){const A=(a&&a[kind])||{},B=(b&&b[kind])||{};for(const k of new Set([...Object.keys(A),...Object.keys(B)])){const x=A[k],y=B[k];out[kind][k]=!x?y:!y?x:(y.t>x.t?y:x)}}return out}
+function toggle(kind,d){const on=kind==='done'?done[d]:prac[d];meta[kind][d]={v:on?0:1,t:Date.now()};derive();save();render()}
+try{const v=localStorage.getItem('qview');if(v)view=v}catch(e){}
+function save(){try{localStorage.setItem('qmeta',JSON.stringify(meta));localStorage.setItem('qdone',JSON.stringify(done));localStorage.setItem('qprac',JSON.stringify(prac))}catch(e){}}
+const $=id=>document.getElementById(id);
+const esc=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const txt=p=>`${N[p[0]-1]} ${p[1]}–${p[2]}`;
+const fmt=s=>new Date(s+'T00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+const todayISO=(()=>{const t=new Date();return new Date(t-t.getTimezoneOffset()*6e4).toISOString().slice(0,10)})();
+const todayIdx=(()=>{const i=D.findIndex(d=>d.date===todayISO);if(i>=0)return i;return todayISO<D[0].date?0:364})();
+const nDone=()=>Object.keys(done).length;
+const ayahs=d=>d.p.reduce((s,p)=>s+p[2]-p[1]+1,0);
+function streak(){let i=done[D[todayIdx].d]?todayIdx:todayIdx-1,s=0;while(i>=0&&done[D[i].d]){s++;i--}return s}
+function nextUnread(){return D.find(d=>!done[d.d])||D[364]}
+// global ayah index (1-based) for juz progress
+const SC=[7,286,200,176,120,165,206,75,129,109,123,111,43,52,99,128,111,110,98,135,112,78,118,64,77,227,93,88,69,60,34,30,73,54,45,83,182,88,75,85,54,53,89,59,37,35,38,29,18,45,60,49,62,55,78,96,29,22,24,13,14,11,11,18,12,12,30,52,52,44,28,28,20,56,40,31,50,40,46,42,29,19,36,25,22,17,19,26,30,20,15,21,11,8,8,19,5,8,8,11,11,8,3,9,5,4,7,3,6,3,5,4,5,6];
+const OFF=[0];SC.forEach(c=>OFF.push(OFF[OFF.length-1]+c));
+const gi=(s,a)=>OFF[s-1]+a;
+
+function pickAyah(t){let best=null;t.p.forEach(p=>{for(let a=p[1];a<=p[2];a++){const v=Q[p[0]-1][a-1];const w=v[0].split(/\s+/).length;if(w<3)continue;if(!best||v[0].length<best.v[0].length)best={s:p[0],a,v}}});return best}
+function nightCard(t){
+ if(!Q)return `<section class="card night"><span class="lbl">Ayah of the day</span><p class="hello">Loading…</p></section>`;
+ const b=pickAyah(t);if(!b)return '';
+ return `<section class="card night"><div class="ayh"><span class="lbl">Ayah of the day · from today's reading</span><a class="lis" href="https://quran.com/${b.s}/${b.a}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>Listen</a></div>
+ <div class="ar" lang="ar">${esc(b.v[0])}</div><div class="tr">${esc(b.v[1])}</div><div class="bnt" lang="bn">${esc(b.v[2])}</div>
+ <span class="num">Surah ${N[b.s-1]} (${b.s}), Verse ${b.a}</span></section>`}
+let S={},Sready=false;
+function pracCard(t){
+ const x=S['day-'+t.d];
+ if(!x)return `<section class="card prac"><span class="lbl">Reading practice · Day ${t.d}</span><p class="hello">${Sready?'Summary not available for this day.':'Loading summary…'}</p></section>`;
+ const mins=Math.max(1,Math.round((x.words||0)/100));
+ return `<section class="card prac"><span class="lbl">Reading practice · summary of Day ${t.d}</span><span class="lvl">Level ${esc(x.level)} · ${x.words||''} words · about ${mins} min</span>
+ <h3>${esc(x.title||'')}</h3>${(x.paragraphs||[{text:x.text||''}]).map(p=>`${p.ref?`<span class="num">Ayahs ${esc(p.ref)}</span>`:''}<p class="ptxt">${esc(p.text||'')}</p>`).join('')}
+ ${(x.hardWords&&x.hardWords.length)?`<div class="words"><span class="lbl">New words</span>${x.hardWords.map(w=>`<div><b>${esc(w.w)}</b> <span>— ${esc(w.m)}</span>${w.bn?` · <span class="wbn" lang="bn">${esc(w.bn)}</span>`:''}</div>`).join('')}</div>`:''}
+ <button class="btn ${prac[t.d]?'ghost':'fill'}" data-prac="${t.d}">${prac[t.d]?'Read ✓ (tap to undo)':'I read this summary'}</button></section>`}
+fetch('../data/summaries.json').then(r=>r.json()).then(m=>{S=Object.fromEntries(Object.entries(m).map(([k,v])=>['day-'+k,v]));Sready=true;render()}).catch(()=>{Sready=true;render()});
+function vToday(){
+ const t=D[todayIdx],n=nDone(),pct=Math.round(n/365*100),exp=todayIdx+(done[t.d]?1:0),diff=n-todayIdx;
+ const st=diff>=0?`<span class="status ok">On track${diff>0?` · ${diff} day${diff>1?'s':''} ahead`:''}</span>`:`<span class="status late">${-diff} day${diff<-1?'s':''} behind</span>`;
+ const C=2*Math.PI*40,off=C*(1-n/365);
+ const nx=nextUnread();
+ return `<header class="crown"><svg class="pat" aria-hidden="true"><defs><pattern id="g8" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M24 4l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/><path d="M10 10h28v28H10z"/></pattern></defs><rect width="100%" height="100%" fill="url(#g8)" style="stroke:none"/></svg><p class="basmala" lang="ar">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p><div class="orn"><svg viewBox="0 0 24 24"><path d="M12 1l2.6 4.7 5.2-1.5-1.5 5.2L23 12l-4.7 2.6 1.5 5.2-5.2-1.5L12 23l-2.6-4.7-5.2 1.5 1.5-5.2L1 12l4.7-2.6-1.5-5.2 5.2 1.5z"/></svg></div><span class="tag" lang="ar">ختم القرآن</span><h1>Quran in One Year</h1><p class="hello">Assalamu alaikum, Nadim</p></header>
+ <section class="card hero"><span class="wm" lang="ar" aria-hidden="true">${AR[t.p[0][0]-1]}</span><span class="lbl">Today · Day ${t.d} · ${fmt(t.date)}</span>
+  <span class="big">${t.p.map(txt).join('<br>')}</span>
+  <span class="meta">${ayahs(t)} ayahs · about 10–15 min</span>
+  <button class="btn" data-open="${t.d}">${done[t.d]?'Read again':'Start reading'}</button></section>
+ ${pracCard(t)}
+ <div class="tiles"><div class="tile"><b>${streak()}</b><span>day streak</span></div><div class="tile"><b>${n}</b><span>days done</span></div><div class="tile"><b>${365-n}</b><span>days left</span></div></div>
+ <section class="card"><div class="ringrow"><svg class="ring" viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="40"/><circle class="fg" cx="50" cy="50" r="40" stroke-dasharray="${C}" stroke-dashoffset="${off}" transform="rotate(-90 50 50)"/><text x="50" y="56" text-anchor="middle">${pct}%</text></svg>
+  <div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span class="lbl">Whole Quran</span>${st}<span class="hello">${nx.d!==t.d&&!done[nx.d]?`Next unread: Day ${nx.d}`:'Keep going, one day at a time.'}</span></div></div>
+  ${nx.d!==t.d&&!done[nx.d]?`<button class="btn ghost" data-open="${nx.d}">Catch up: Day ${nx.d}</button>`:''}</section>
+ ${nightCard(t)}
+ <p class="closing" lang="ar">رَبِّ زِدْنِي عِلْمًا</p>`;
+}
+function vRead(){
+ const t=sel||D[todayIdx];sel=t;
+ let h=`<section class="card"><span class="lbl">Day ${t.d} · ${fmt(t.date)}</span><span style="font-weight:800;font-size:1.15rem">${t.p.map(txt).join(' + ')}</span><span class="hello">Arabic · English pronunciation · Bangla meaning. Tap Listen to hear the real recitation.</span></section>${pracCard(t)}<section class="card">`;
+ if(!Q)h+=`<p class="hello" id="loadmsg">Loading ayahs…</p>`;
+ else t.p.forEach(p=>{h+=`<div class="ayh"><span class="sh">${N[p[0]-1]}</span><a class="lis" href="https://quran.com/${p[0]}/${p[1]}-${p[2]}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>Listen to all</a></div>`;for(let a=p[1];a<=p[2];a++){const v=Q[p[0]-1][a-1];
+  h+=`<div class="ay"><div class="ayh"><span class="num">${p[0]}:${a}</span><a class="lis" href="https://quran.com/${p[0]}/${a}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>Listen</a></div><div class="ar" lang="ar">${esc(v[0])}</div><div class="tr">${esc(v[1])}</div><div class="bnt" lang="bn">${esc(v[2])}</div></div>`}});
+ h+=`</section><button class="btn fill" id="mark">${done[t.d]?'Done ✓ (tap to undo)':'Mark Day '+t.d+' as done'}</button>
+ <div class="nav">${t.d>1?`<button class="btn ghost" data-open="${t.d-1}">← Day ${t.d-1}</button>`:''}${t.d<365?`<button class="btn ghost" data-open="${t.d+1}">Day ${t.d+1} →</button>`:''}</div>
+ <p class="src">Text, transliteration and Bangla translation: quran-json by Risan Bagja Pradana (CC BY-SA 4.0), from QuranEnc and Tanzil. Daily summaries are based on the Saheeh International English translation.</p>`;
+ return h;
+}
+function vPlan(){
+ let h=`<header><h1>Plan</h1><p class="hello">365 days · 19 Oct 2026 – 18 Oct 2027</p></header><section class="card" style="padding-block:4px">`,m='';
+ D.forEach((d,i)=>{const mm=new Date(d.date+'T00:00').toLocaleDateString('en-GB',{month:'long',year:'numeric'});
+  if(mm!==m){h+=`<h2>${mm}</h2>`;m=mm}
+  h+=`<div class="row${done[d.d]?' done':''}${i===todayIdx?' now':''}" ${i===todayIdx?'id="nowrow"':''}><input type="checkbox" id="c${d.d}" data-d="${d.d}" ${done[d.d]?'checked':''} aria-label="Day ${d.d} done"><span class="dt">Day ${d.d}<br>${fmt(d.date)}</span><button class="rd" data-open="${d.d}">${d.p.map(txt).join('<br>')}</button></div>`});
+ return h+'</section>';
+}
+function vStats(){
+ const n=nDone();let read=new Set();D.forEach(d=>{if(done[d.d])d.p.forEach(p=>{for(let a=p[1];a<=p[2];a++)read.add(gi(p[0],a))})});
+ const juz=JUZ.map((j,k)=>{const s=gi(...j),e=k<29?gi(...JUZ[k+1])-1:6236;let c=0;for(let x=s;x<=e;x++)if(read.has(x))c++;return c/(e-s+1)});
+ const sur=SC.filter((c,k)=>{for(let a=1;a<=c;a++)if(!read.has(gi(k+1,a)))return false;return true}).length;
+ return `<header><h1>Progress</h1><p class="hello">${read.size.toLocaleString()} of 6,236 ayahs read</p></header>
+ <div class="tiles"><div class="tile"><b>${juz.filter(x=>x>=1).length}</b><span>of 30 juz</span></div><div class="tile"><b>${sur}</b><span>of 114 surahs</span></div><div class="tile"><b>${streak()}</b><span>day streak</span></div></div>
+ <section class="card"><span class="lbl">Juz progress</span><div class="juz">${juz.map((x,k)=>`<div><span class="b"><i style="height:${Math.round(x*100)}%"></i></span>${k+1}</div>`).join('')}</div></section>
+ <section class="card"><span class="lbl">Your 365 days</span><div class="heat">${D.map((d,i)=>`<i class="${done[d.d]?'d':''}${i===todayIdx?' t':''}" title="Day ${d.d}"></i>`).join('')}</div>
+ <div class="legend"><span><i style="background:var(--accent)"></i>Done</span><span><i style="background:var(--empty)"></i>Not yet</span><span><i style="outline:2px solid var(--accent2);background:var(--empty)"></i>Today</span></div></section>`;
+}
+const V={today:vToday,read:vRead,plan:vPlan,stats:vStats};
+function render(scroll){
+ ['today','read','plan','stats'].forEach(k=>{$('v-'+k).hidden=k!==view});
+ $('v-'+view).innerHTML=V[view]();
+ document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===view));
+ if(scroll==='top')window.scrollTo(0,0);
+ if(scroll==='now'){const r=$('nowrow');if(r)r.scrollIntoView({block:'center'})}
+}
+function go(v,scroll){view=v;try{localStorage.setItem('qview',v)}catch(e){}render(scroll)}
+document.querySelector('.tabs').addEventListener('click',e=>{const b=e.target.closest('[data-v]');if(!b)return;if(b.dataset.v==='read'&&view!=='read')sel=sel||D[todayIdx];go(b.dataset.v,b.dataset.v==='plan'?'now':'top')});
+document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o){sel=D[o.dataset.open-1];go('read','top');return}
+ const pb=e.target.closest('[data-prac]');if(pb){toggle('prac',pb.dataset.prac);return}
+ if(e.target.id==='mark'){toggle('done',String(sel.d))}});
+document.addEventListener('change',e=>{const d=e.target.dataset&&e.target.dataset.d;if(!d)return;toggle('done',d)});
+render('top');
+fetch('../data/quran-data.json').then(r=>r.json()).then(j=>{Q=j;if(view==='read'||view==='today')render()}).catch(()=>{const m=$('loadmsg');if(m)m.textContent='Could not load ayahs. Reload the page.'});
+</script>
+
+</body></html>

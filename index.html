@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f6b52"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="description" content="Read the whole Quran in one year, with a personal start date and offline access.">
+<title>Quran in One Year</title><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/apple-touch-icon.png"><link rel="icon" href="./icons/quran.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Amiri+Quran&family=Aref+Ruqaa:wght@700&family=Noto+Sans+Bengali:wght@400;600&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="./styles.css">
+</head><body>
+<main class="screen" id="app" aria-live="polite"></main>
+<nav class="tabs" role="tablist" aria-label="Main navigation" hidden>
+<button role="tab" data-v="today" aria-selected="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Today</button>
+<button role="tab" data-v="read" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M12 6c-2-1.5-5-2-8-2v14c3 0 6 .5 8 2 2-1.5 5-2 8-2V4c-3 0-6 .5-8 2zM12 6v14"/></svg>Read</button>
+<button role="tab" data-v="plan" aria-selected="false"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Plan</button>
+<button role="tab" data-v="stats" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M5 20V11M12 20V5M19 20v-6"/></svg>Progress</button>
+</nav><script type="module" src="./app.js"></script></body></html>

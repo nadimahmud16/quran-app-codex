@@ -1,0 +1,42 @@
+{
+ "day": 2,
+ "hardWords": [
+  {
+   "bn": "ক্ষতি",
+   "m": "damage or hurt",
+   "w": "harm"
+  },
+  {
+   "bn": "উদাহরণ",
+   "m": "a short story that explains an idea",
+   "w": "example"
+  },
+  {
+   "bn": "ইবাদত",
+   "m": "to pray to and serve Allah",
+   "w": "worship"
+  },
+  {
+   "bn": "কাজ",
+   "m": "actions, things we do",
+   "w": "deeds"
+  }
+ ],
+ "level": 1,
+ "paragraphs": [
+  {
+   "ref": "2:11-16",
+   "text": "Some people cause harm on the earth, but they say, \"We only want to make things better.\" They say they believe, but in secret they laugh at the believers. They choose the wrong way over the right way. This is a bad trade."
+  },
+  {
+   "ref": "2:17-20",
+   "text": "Allah gives two examples. A man lights a fire, then the light goes away and he is left in the dark. Another group is caught in a storm with thunder and lightning. They are afraid and cannot see the way."
+  },
+  {
+   "ref": "2:21-27",
+   "text": "Then Allah calls all people to worship Him. He made the earth and the sky, and He sends rain and food. If people doubt the Quran, they cannot make anything like it. There is good news for people who believe and do good deeds."
+  }
+ ],
+ "title": "People Who Say One Thing and Do Another",
+ "words": 127
+}

@@ -1,0 +1,46 @@
+{
+ "day": 23,
+ "hardWords": [
+  {
+   "bn": "তওবা করা",
+   "m": "to be sorry and stop doing wrong",
+   "w": "repent"
+  },
+  {
+   "bn": "হজ / তীর্থযাত্রা",
+   "m": "a holy journey to a special place",
+   "w": "pilgrimage"
+  },
+  {
+   "bn": "পথনির্দেশ / হেদায়েত",
+   "m": "showing the right way",
+   "w": "guidance"
+  },
+  {
+   "bn": "অবিশ্বাস / কুফর",
+   "m": "not believing",
+   "w": "disbelief"
+  }
+ ],
+ "level": 1,
+ "paragraphs": [
+  {
+   "ref": "3:84-85",
+   "text": "Say: We believe in Allah and what came to us. We believe in what came to Abraham, Ishmael, Isaac and Jacob. We believe in what Moses, Jesus and the prophets were given. We make no difference between them. Whoever wants a religion other than Islam will lose."
+  },
+  {
+   "ref": "3:86-92",
+   "text": "Some saw clear signs but turned away. Allah does not guide the wrongdoers. Their punishment will not be made lighter. But Allah forgives those who repent and do good. One who dies disbelieving cannot save himself with gold. You reach the good by spending what you love."
+  },
+  {
+   "ref": "3:93-97",
+   "text": "Follow the religion of Abraham. The first House of worship is at Makkah. It is blessed and a guidance. Whoever enters it is safe. People who are able must make the pilgrimage there."
+  },
+  {
+   "ref": "3:98-100",
+   "text": "Why do the People of the Scripture deny Allah's verses? Allah sees what they do. Some want to turn believers back to disbelief."
+  }
+ ],
+ "title": "One Faith, Giving, and the House at Makkah",
+ "words": 150
+}

@@ -1,0 +1,42 @@
+{
+ "day": 5,
+ "hardWords": [
+  {
+   "bn": "পুরস্কার",
+   "m": "something good you get for good work",
+   "w": "reward"
+  },
+  {
+   "bn": "জবাই করা",
+   "m": "to kill an animal for food",
+   "w": "slaughter"
+  },
+  {
+   "bn": "ধর্মগ্রন্থ",
+   "m": "a holy book",
+   "w": "Scripture"
+  },
+  {
+   "bn": "শিক্ষা",
+   "m": "something that teaches you",
+   "w": "lesson"
+  }
+ ],
+ "level": 1,
+ "paragraphs": [
+  {
+   "ref": "2:62-66",
+   "text": "Those who believe in Allah and the Last Day are rewarded. This includes Jews, Christians and Sabeans who believed and did good. They will have no fear or sadness. Allah took a promise from the Children of Israel. He raised the mountain over them. They turned away, but Allah was kind to them. Some broke the Sabbath rule. They became a lesson for others."
+  },
+  {
+   "ref": "2:67-73",
+   "text": "Moses told his people to slaughter a cow. They asked many questions about it. Allah told them its age and color. At last, they slaughtered it, but almost did not. A man was killed, and people argued about it. Allah showed how He brings the dead to life."
+  },
+  {
+   "ref": "2:74-78",
+   "text": "After this, their hearts became hard like stones. Some people heard Allah's words and changed them. Allah knows what people hide and what they show. Some people do not know the Scripture. They only guess."
+  }
+ ],
+ "title": "A Promise, a Cow, and Hard Hearts",
+ "words": 147
+}

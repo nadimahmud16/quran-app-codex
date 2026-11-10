@@ -1,0 +1,42 @@
+{
+ "day": 1,
+ "hardWords": [
+  {
+   "bn": "দয়ালু",
+   "m": "very kind and forgiving",
+   "w": "merciful"
+  },
+  {
+   "bn": "পথ দেখানো",
+   "m": "to show the way",
+   "w": "guide"
+  },
+  {
+   "bn": "সন্দেহ",
+   "m": "a feeling of not being sure",
+   "w": "doubt"
+  },
+  {
+   "bn": "অদৃশ্য",
+   "m": "things we cannot see",
+   "w": "unseen"
+  }
+ ],
+ "level": 1,
+ "paragraphs": [
+  {
+   "ref": "1:1-7",
+   "text": "Al-Fatihah is a short prayer. It praises Allah, the Lord of all the worlds. He is very merciful. He is the King of the Day of Judgment. We worship only Him, and we ask only Him for help. We ask Him to guide us to the straight path."
+  },
+  {
+   "ref": "2:1-5",
+   "text": "Al-Baqarah begins. It says there is no doubt in this Book. It guides people who believe in the unseen. They pray, and they give from what Allah gave them. They are the successful ones."
+  },
+  {
+   "ref": "2:6-10",
+   "text": "Some people do not believe, even when they are warned. Other people say, \"We believe,\" but it is not true. They try to trick others, but they only trick themselves."
+  }
+ ],
+ "title": "The Opening Prayer and the Start of Al-Baqarah",
+ "words": 112
+}
